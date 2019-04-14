@@ -22,6 +22,10 @@ $ python manage.py runserver
 * resize Profile Pictures
 * SQLite Database
 
+## Screenshots
+
+
+
 ## Who is this for?
 
 netcell is for everyone who wants to self-host a simple Microblogging Service, with no worries about Licensing, spying or unwanted third party behavior. Some of the use cases would be:
@@ -35,5 +39,10 @@ netcell is for everyone who wants to self-host a simple Microblogging Service, w
 * django 2.2 or higher
 
 
+
+## Technologies used
+
+* Django 2.2
+* Pillow
 
 **created with** ![8bit-heart](media/8bit-heart.png) **and** ![8bit-heart](media/opensource.png)

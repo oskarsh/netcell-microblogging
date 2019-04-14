@@ -136,4 +136,4 @@ EMAIL_HOST_USER = os.environ.get("EMAIL_USERNAME")
 EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_PASSWORD")
 EMAIL_PORT = 587
 
-ALLOWED_HOSTS = ["cold-dragonfly-66.localtunnel.me"]
+ALLOWED_HOSTS = ["tidy-quail-44.localtunnel.me", "localhost"]

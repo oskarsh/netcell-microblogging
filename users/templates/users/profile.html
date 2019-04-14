@@ -14,13 +14,13 @@
     {% csrf_token %}
     <fieldset class="form-group">
       <legend class="border-bottom mb-4">
-        Join Today
+        Update Profile
       </legend>
       {{ u_form|crispy }}
       {{ p_form|crispy }}
     </fieldset>
     <div class="form-group">
-      <button class="btn btn-outline-info" type="submit">Update</button>
+      <button class="btn btn-outline-info p-3" type="submit">Update</button>
     </div>
   </form>
 </div>
