@@ -45,7 +45,8 @@ class PostDetailView(DetailView):
 
 class PostCreateView(LoginRequiredMixin, CreateView):
     model = Post
-    fields = ['title', 'content']
+    http_method_names = ['post', 'get']
+    fields = ['title', 'content', 'image']
 
     # add author before form validation
     def form_valid(self, form):
@@ -55,7 +56,7 @@ class PostCreateView(LoginRequiredMixin, CreateView):
 
 class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Post
-    fields = ['title', 'content']
+    fields = ['title', 'content', 'image']
 
     # add author before form validation
     def form_valid(self, form):
@@ -82,3 +83,6 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
 def about(request):
     return render(request, "blog/about.html")
+
+def privacy(request):
+    return render(request, "blog/privacy.html")

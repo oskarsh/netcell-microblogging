@@ -4,8 +4,8 @@
 {% block content %}
 <div class="content-section">
   <div class="container">
-    <div class="row">
-      <div class="col"><img class="svg-img" src="{% static 'assets/marketing.svg' %}" alt="test"></div>
+    <div class="row flex">
+      <div class="col"><img class="vector" src="{% static 'assets/creative.svg' %}" alt="login svg"></div>
       <div class="col">
         <form method="POST">
           <!-- adding a hidden Tag, csrf token -->
@@ -17,7 +17,7 @@
             {{ form|crispy }}
           </fieldset>
           <div class="form-group">
-            <button class="btn btn-outline-info" type="submit">Login</button>
+            <button class="btn btn-lg bg-steel type="submit">Login</button>
           </div>
         </form>
         <div class="border-top pt-3">

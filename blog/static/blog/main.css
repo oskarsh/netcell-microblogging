@@ -14,7 +14,15 @@ ul {
 }
 
 .bg-steel {
-  background-color: #5f788a;
+  background-color: #6554e8;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.purple-outline {
+    border: 1px solid #6554e8;
 }
 
 .svg-img {
@@ -33,6 +41,40 @@ ul {
 .site-header .navbar-nav .nav-link.active {
   font-weight: 500;
   font-family: 'Heebo', sans-serif;
+}
+
+.vector {
+    width: 95%;
+    min-width: 150;
+}
+
+.empty {
+    width: 20%;
+    min-width: 100;
+}
+
+.fingerprint {
+    width: 100%;
+    min-width: 150;
+}
+
+#article-detail {
+    min-height: 250px;
+}
+
+#values {
+    font-size: 7rem;
+    color: #715dff;
+    font-weight: bolder;
+    width: 100%;
+    vertical-align: middle;
+    margin: auto auto auto auto;
+    text-align: center;
+    height: 100%;
+}
+
+.center-content {
+    align-self: center;
 }
 
 .content-section {
@@ -74,6 +116,10 @@ a.article-title:hover {
   height: 65px;
   width: 65px;
   margin-right: 16px;
+}
+
+.login-form {
+    background-color: #333;
 }
 
 .article-metadata {

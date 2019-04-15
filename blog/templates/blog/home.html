@@ -1,5 +1,11 @@
 {% extends "blog/base.html" %}
+{% load static %}
 {% block content %}
+
+{% if posts.count == 0%}
+<h1 id="values">Empty here, create your first post</h1>
+<div class="col"><img class="empty" src="{% static 'assets/post.svg' %}" alt="login svg"></div>
+{% endif%}
 
 {% for post in posts %}
 <article class="media content-section">
@@ -8,8 +14,19 @@
       <a class="mr-2" href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a>
       <small class="text-muted">{{ post.date_posted|date:"F d, Y" }}</small>
     </div>
-    <h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
-    <p class="article-content">{{ post.content }}</p>
+    <div class="row">
+        <div class="col-sm-9">
+                <h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
+                <p class="article-content">{{ post.content|truncatewords:"2" }}</p>
+        </div>
+        {% if not post.image.url == "/media/default.jpg" %}
+        <div class="col-sm-3">
+                <img class="rounded account-img img-fluid" src="{{ post.image.url }}">
+        </div>
+        {% endif %}
+
+    </div>
+
   </div>
 </article>
 {% endfor %}
