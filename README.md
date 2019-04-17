@@ -18,7 +18,16 @@ $ cd netcell-microblogging
 $ python manage.py runserver
 ```
 
+## Usage
 
+This will start itself on 
+```
+localhost:8000
+```
+if you want to host this on a real server and directly want to use your own Domain you will need to edit the settings.py to add your host to the allowed hosts array.
+```
+ALLOWED_HOSTS = ["myDomain.io"]
+```
 
 ## Features
 
