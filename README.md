@@ -34,9 +34,7 @@ $ python manage.py runserver
 
 
 
-## Who is this for?
-
-netcell is for everyone who wants to self-host a simple Microblogging Service, with no worries about Licensing, spying or unwanted third party behavior. Some of the use cases would be:
+## Who is this for?netcell is for everyone who wants to self-host a simple Microblogging Service, with no worries about Licensing, spying or unwanted third party behavior. Some of the use cases would be:
 
 * used internally as an Update feed on upcoming Events
 * Share Ideas or thoughts to a limited audience
